@@ -74,8 +74,10 @@ const MainLayout = () => {
         color="inherit"
         elevation={0}
         sx={{
-          bgcolor: theme.palette.background.default,
+          bgcolor: '#c6e5f4',
           transition: leftDrawerOpened ? theme.transitions.create('width') : 'none',
+          // Thêm đổ bóng ở đây
+          boxShadow: '0px 4px 10px rgba(0, 0, 0, 23%)',
         }}
       >
         <Toolbar>
@@ -88,7 +90,7 @@ const MainLayout = () => {
       <Sidebar drawerOpen={!matchDownMd ? leftDrawerOpened : !leftDrawerOpened} drawerToggle={handleLeftDrawerToggle} />
 
       {/* main content */}
-      <Main theme={theme} open={leftDrawerOpened}>
+      <Main theme={theme} open={leftDrawerOpened} sx={{backgroundColor:'#eff7ff'}}>
         {/* breadcrumb */}
         <Breadcrumbs separator={IconChevronRight} navigation={navigation} icon title rightAlign />
         <Outlet />

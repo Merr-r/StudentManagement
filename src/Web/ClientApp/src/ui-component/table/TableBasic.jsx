@@ -20,6 +20,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
       fontSize: 14,
     },
     borderRight: '0.1px solid #ddd',
+    padding:'4px'
   }));
   
   const StyledTableRow = styled(TableRow)(({ theme }) => ({
@@ -36,14 +37,17 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     },
     
   }));
-
+  const StyledTableContainer = styled(TableContainer)(({ theme }) => ({
+    borderLeft: '1px solid #605656', // Viền bao quanh bảng
+    borderBottom: '1px solid #605656', // Viền bao quanh bảng
+  }));
 export default function GenericTable({ columns, rows , maxHeight}) {
   const theme = useTheme();
 
 
   return (
     <Paper sx={{ width: '100%', overflow: 'hidden' }}>
-      <TableContainer sx={{ maxHeight: {maxHeight} }}>
+      <StyledTableContainer sx={{ maxHeight: {maxHeight} }}>
         <Table stickyHeader aria-label="sticky table">
           <TableHead>
             <TableRow>
@@ -76,7 +80,7 @@ export default function GenericTable({ columns, rows , maxHeight}) {
               ))}
           </TableBody>
         </Table>
-      </TableContainer>
+      </StyledTableContainer>
     </Paper>
   );
 }

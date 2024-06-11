@@ -67,6 +67,9 @@ export default function themePalette(theme) {
       dark: theme.textDark,
       hint: theme.colors?.grey100
     },
+    green: {
+      dark: theme.greenColor
+    },
     background: {
       paper: theme.paper,
       default: theme.backgroundDefault,

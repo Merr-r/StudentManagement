@@ -8,7 +8,7 @@
 /* eslint-disable */
 // ReSharper disable InconsistentNaming
 
-import followIfLoginRedirect from './components/api-authorization/followIfLoginRedirect';
+import followIfLoginRedirect from './ui-components/api-authorization/followIfLoginRedirect';
 
 export class TodoItemsClient {
     private http: { fetch(url: RequestInfo, init?: RequestInit): Promise<Response> };

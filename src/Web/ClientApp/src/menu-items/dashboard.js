@@ -19,18 +19,20 @@ const dashboard = {
 
       children: [
         {
-          id: 'login3',
+          id: 'viewCurriculum',
           title: 'Xem chương trình học',
           type: 'item',
           url: '/utils/util-shadow',
-          target: false
+          target: false,
+          breadcrumbs: false
         },
         {
-          id: 'register3',
+          id: 'registerForStudy',
           title: 'Đăng ký học',
           type: 'item',
-          url: '/pages/register/register3',
-          target: true
+          url: '/utils/register-study',
+          target: false,
+          breadcrumbs: false
         },
         {
           id: 'register4',

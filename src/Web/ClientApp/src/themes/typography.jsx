@@ -3,6 +3,8 @@
  * @param {JsonObject} theme theme customization object
  */
 
+import { padding } from "@mui/system";
+
 export default function themeTypography(theme) {
   return {
     fontFamily: theme?.customization?.fontFamily,
@@ -32,6 +34,11 @@ export default function themeTypography(theme) {
       fontWeight: 700
     },
     h1: {
+      fontSize: '2.125rem',
+      color: theme.heading,
+      fontWeight: 700
+    },
+    texth1: {
       fontSize: '2.125rem',
       color: theme.heading,
       fontWeight: 700
@@ -114,6 +121,12 @@ export default function themeTypography(theme) {
       fontWeight: 500,
       color: theme.darkTextSecondary,
       textTransform: 'capitalize'
+    },
+    titleHeader: {
+      fontSize: '1rem',
+      fontWeight: 450,
+      color: theme.darkTextSecondary,
+      padding:0
     },
     commonAvatar: {
       cursor: 'pointer',

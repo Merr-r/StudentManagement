@@ -26,7 +26,7 @@ const pages = {
           title: 'Đổi mật khẩu',
           type: 'item',
           url: '/pages/login/login3',
-          target: true
+          target: false
         },
         {
           id: 'register3',

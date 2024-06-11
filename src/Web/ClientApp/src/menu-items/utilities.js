@@ -33,10 +33,18 @@ const utilities = {
       breadcrumbs: false
     },
     {
-      id: 'util-shadow',
+      id: 'util-shcadow',
       title: 'Shadow',
       type: 'item',
-      url: '/utils/util-shadow',
+      url: '/utils/utcil-shadow',
+      icon: icons.IconShadow,
+      breadcrumbs: false
+    },
+    {
+      id: 'registcer-study',
+      title: 'Register Study',
+      type: 'item',
+      url: '/utils/register-cstudy',
       icon: icons.IconShadow,
       breadcrumbs: false
     }
